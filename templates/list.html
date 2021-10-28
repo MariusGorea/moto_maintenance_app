@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block body %}
+    <form method="post">
+        {% csrf_token %}
+        <input type="text" name="vin">
+        <button type="submit">Cautare</button>
+    </form>
+
+    <p> {{ vin.country }} </p>
+    <p> {{ vin.manufacturer }} </p>
+    <p> {{ vin.region }} </p>
+    <p> {{ vin.years }} </p>
+    <p> {{ vin.details }} </p>
+{% endblock %}
