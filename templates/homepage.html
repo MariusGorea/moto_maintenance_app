@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+{% block body %}
+    {#    <form method="post">#}
+    {#        {% csrf_token %}#}
+    {#        <input type="text" name="vin">#}
+    {#        <button type="submit">Cautare</button>#}
+    {#    </form>#}
+    {##}
+    {#    <p> {{ vin.country }} </p>#}
+    {#    <p> {{ vin.manufacturer }} </p>#}
+    {#    <p> {{ vin.region }} </p>#}
+    {#    <p> {{ vin.years }} </p>#}
+    {#    <p> {{ vin.details }} </p>#}
+
+    <article>
+        <header>
+            <center>
+                <h1>MotoMaintenanceApp</h1>
+                <p>The best solutions to keep your motorcycle safe</p>
+            </center>
+        </header>
+        <center>
+            <p>MotoMaintenanceApp is your best partner!</p>
+        </center>
+    </article>
+    <main>
+        <h2>Carousel</h2>
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="..." class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="..." class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="..." class="d-block w-100" alt="...">
+                </div>
+            </div>
+        </div>
+        <h3>Message</h3>
+        <p>When you are in trouble, download the Moto_Maintenance_App</p>
+    </main>
+    <footer>
+        <p>Contact</p>
+        <p>
+            <a href="mailto:some@email.com">some@email.com</a>
+        </p>
+    </footer>
+    <aside>
+        <h4>Motto</h4>
+        <p>Don't waste your time, live your life</p>
+    </aside>
+
+{% endblock %}
+
+
+

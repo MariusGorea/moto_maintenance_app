@@ -1,0 +1,29 @@
+<table border="1">
+    <th>Owner</th>
+    <th>Brand</th>
+    <th>Model</th>
+    <th>VIN</th>
+    <th>Manufactured Year</th>
+    <th>Real Km</th>
+    <th>Next Maintenance</th>
+    <th>Parts from maintenance</th>
+    <th>Parts from repairs</th>
+    {%  for motocicleta in motociclete_cu_costuri %}
+    <tr>
+        <td rowspan="1">{{ motocicleta.motorcycle.owner.name }}</td>    {#  motocicleta este obiectul din lista Toate MOtocicletele #}
+        <td rowspan="1">{{ motocicleta.motorcycle_brand }}</td>
+        <td rowspan="1"> {{motocicleta.motorcycle_model }}</td>
+        <td rowspan="1"> {{motocicleta.vin}}</td>
+        <td rowspan="1">{{motocicleta.motorcycle.manufactured_year}}</td>
+        <td rowspan="1">{{motocicleta.motorcycle.real_km }}</td>
+        <td rowspan="1">{{motocicleta.motorcycle.next_maintenance }}</td>
+        <td rowspan="1">{{motocicleta.expense }}</td>
+        <td rowspan="1">{{motocicleta.motorcycle.parts_from_repairs }}</td>
+    </tr>
+{% endfor %}
+</table>
+
+
+
+
+
